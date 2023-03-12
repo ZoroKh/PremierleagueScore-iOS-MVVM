@@ -2,7 +2,7 @@
 //  SceneDelegate.swift
 //  PremierleagueScore
 //
-//  Created by Horleang Choeng on 2023/03/12.
+//  Created by ZoroKh on 2023/03/12.
 //
 
 import UIKit

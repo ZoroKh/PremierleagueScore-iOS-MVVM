@@ -1,0 +1,38 @@
+{
+    "region": "England",
+    "season": "20XX-20YY",
+    "data": [
+        {
+            "name": "Chelsea",
+            "rank": "1"
+        },
+        {
+            "name": "Manchester City",
+            "rank": "2"
+        },
+        {
+            "name": "Manchester United",
+            "rank": "3"
+        },
+        {
+            "name": "Liverpool",
+            "rank": "4"
+        },
+        {
+            "name": "Tottenham Hotspur",
+            "rank": "5"
+        },
+        {
+            "name": "Arsenal",
+            "rank": "6"
+        },
+        {
+            "name": "Newcastle United",
+            "rank": "7"
+        },
+        {
+            "name": "Leicester City",
+            "rank": "8"
+        },
+    ]
+}

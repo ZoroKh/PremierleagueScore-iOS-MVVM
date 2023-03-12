@@ -13,6 +13,12 @@
 		092FF10029BD937600E50CA8 /* Main.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 092FF0FE29BD937600E50CA8 /* Main.storyboard */; };
 		092FF10229BD937800E50CA8 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 092FF10129BD937800E50CA8 /* Assets.xcassets */; };
 		092FF10529BD937800E50CA8 /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 092FF10329BD937800E50CA8 /* LaunchScreen.storyboard */; };
+		092FF11229BD98A500E50CA8 /* APIService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092FF11129BD98A500E50CA8 /* APIService.swift */; };
+		092FF11429BD9B2D00E50CA8 /* FootballClubs.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092FF11329BD9B2D00E50CA8 /* FootballClubs.swift */; };
+		092FF11729BD9D2900E50CA8 /* FootballClubViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092FF11629BD9D2900E50CA8 /* FootballClubViewModel.swift */; };
+		092FF11829BDA09E00E50CA8 /* footballclubs.json in Resources */ = {isa = PBXBuildFile; fileRef = 092FF11529BD9C4800E50CA8 /* footballclubs.json */; };
+		092FF11A29BDA43900E50CA8 /* FootballClubTableViewDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092FF11929BDA43900E50CA8 /* FootballClubTableViewDataSource.swift */; };
+		092FF11D29BDA88C00E50CA8 /* FootballClubTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 092FF11C29BDA88C00E50CA8 /* FootballClubTableViewCell.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXFileReference section */
@@ -24,6 +30,12 @@
 		092FF10129BD937800E50CA8 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
 		092FF10429BD937800E50CA8 /* Base */ = {isa = PBXFileReference; lastKnownFileType = file.storyboard; name = Base; path = Base.lproj/LaunchScreen.storyboard; sourceTree = "<group>"; };
 		092FF10629BD937800E50CA8 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		092FF11129BD98A500E50CA8 /* APIService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = APIService.swift; sourceTree = "<group>"; };
+		092FF11329BD9B2D00E50CA8 /* FootballClubs.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballClubs.swift; sourceTree = "<group>"; };
+		092FF11529BD9C4800E50CA8 /* footballclubs.json */ = {isa = PBXFileReference; lastKnownFileType = text.json; path = footballclubs.json; sourceTree = "<group>"; };
+		092FF11629BD9D2900E50CA8 /* FootballClubViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballClubViewModel.swift; sourceTree = "<group>"; };
+		092FF11929BDA43900E50CA8 /* FootballClubTableViewDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballClubTableViewDataSource.swift; sourceTree = "<group>"; };
+		092FF11C29BDA88C00E50CA8 /* FootballClubTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FootballClubTableViewCell.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -56,15 +68,69 @@
 		092FF0F729BD937600E50CA8 /* PremierleagueScore */ = {
 			isa = PBXGroup;
 			children = (
-				092FF0F829BD937600E50CA8 /* AppDelegate.swift */,
-				092FF0FA29BD937600E50CA8 /* SceneDelegate.swift */,
-				092FF0FC29BD937600E50CA8 /* ViewController.swift */,
-				092FF0FE29BD937600E50CA8 /* Main.storyboard */,
+				092FF11B29BDA84500E50CA8 /* TableViewCells */,
+				092FF10F29BD97ED00E50CA8 /* Common */,
+				092FF10C29BD978E00E50CA8 /* APIService */,
+				092FF10D29BD979D00E50CA8 /* Models */,
+				092FF10E29BD97CF00E50CA8 /* View */,
+				092FF11029BD980D00E50CA8 /* ViewModels */,
 				092FF10129BD937800E50CA8 /* Assets.xcassets */,
 				092FF10329BD937800E50CA8 /* LaunchScreen.storyboard */,
 				092FF10629BD937800E50CA8 /* Info.plist */,
 			);
 			path = PremierleagueScore;
+			sourceTree = "<group>";
+		};
+		092FF10C29BD978E00E50CA8 /* APIService */ = {
+			isa = PBXGroup;
+			children = (
+				092FF11129BD98A500E50CA8 /* APIService.swift */,
+				092FF11529BD9C4800E50CA8 /* footballclubs.json */,
+			);
+			path = APIService;
+			sourceTree = "<group>";
+		};
+		092FF10D29BD979D00E50CA8 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				092FF11329BD9B2D00E50CA8 /* FootballClubs.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		092FF10E29BD97CF00E50CA8 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				092FF0FC29BD937600E50CA8 /* ViewController.swift */,
+				092FF0FE29BD937600E50CA8 /* Main.storyboard */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		092FF10F29BD97ED00E50CA8 /* Common */ = {
+			isa = PBXGroup;
+			children = (
+				092FF0F829BD937600E50CA8 /* AppDelegate.swift */,
+				092FF0FA29BD937600E50CA8 /* SceneDelegate.swift */,
+			);
+			path = Common;
+			sourceTree = "<group>";
+		};
+		092FF11029BD980D00E50CA8 /* ViewModels */ = {
+			isa = PBXGroup;
+			children = (
+				092FF11629BD9D2900E50CA8 /* FootballClubViewModel.swift */,
+				092FF11929BDA43900E50CA8 /* FootballClubTableViewDataSource.swift */,
+			);
+			path = ViewModels;
+			sourceTree = "<group>";
+		};
+		092FF11B29BDA84500E50CA8 /* TableViewCells */ = {
+			isa = PBXGroup;
+			children = (
+				092FF11C29BDA88C00E50CA8 /* FootballClubTableViewCell.swift */,
+			);
+			path = TableViewCells;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -125,6 +191,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				092FF11829BDA09E00E50CA8 /* footballclubs.json in Resources */,
 				092FF10529BD937800E50CA8 /* LaunchScreen.storyboard in Resources */,
 				092FF10229BD937800E50CA8 /* Assets.xcassets in Resources */,
 				092FF10029BD937600E50CA8 /* Main.storyboard in Resources */,
@@ -139,7 +206,12 @@
 			buildActionMask = 2147483647;
 			files = (
 				092FF0FD29BD937600E50CA8 /* ViewController.swift in Sources */,
+				092FF11729BD9D2900E50CA8 /* FootballClubViewModel.swift in Sources */,
+				092FF11A29BDA43900E50CA8 /* FootballClubTableViewDataSource.swift in Sources */,
 				092FF0F929BD937600E50CA8 /* AppDelegate.swift in Sources */,
+				092FF11429BD9B2D00E50CA8 /* FootballClubs.swift in Sources */,
+				092FF11229BD98A500E50CA8 /* APIService.swift in Sources */,
+				092FF11D29BDA88C00E50CA8 /* FootballClubTableViewCell.swift in Sources */,
 				092FF0FB29BD937600E50CA8 /* SceneDelegate.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -287,11 +359,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6LN8F9Z4FW;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PremierleagueScore/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -300,7 +372,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.leang.mvvm.PremierleagueScore.PremierleagueScore;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zorokh.mvvm.PremierleagueScore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
@@ -315,11 +387,11 @@
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
 				CURRENT_PROJECT_VERSION = 1;
-				DEVELOPMENT_TEAM = 6LN8F9Z4FW;
+				DEVELOPMENT_TEAM = "";
 				GENERATE_INFOPLIST_FILE = YES;
 				INFOPLIST_FILE = PremierleagueScore/Info.plist;
 				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
-				INFOPLIST_KEY_UILaunchStoryboardName = LaunchScreen;
+				INFOPLIST_KEY_UILaunchStoryboardName = "";
 				INFOPLIST_KEY_UIMainStoryboardFile = Main;
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
 				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPhone = "UIInterfaceOrientationPortrait UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight";
@@ -328,7 +400,7 @@
 					"@executable_path/Frameworks",
 				);
 				MARKETING_VERSION = 1.0;
-				PRODUCT_BUNDLE_IDENTIFIER = com.leang.mvvm.PremierleagueScore.PremierleagueScore;
+				PRODUCT_BUNDLE_IDENTIFIER = com.zorokh.mvvm.PremierleagueScore;
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_EMIT_LOC_STRINGS = YES;
 				SWIFT_VERSION = 5.0;
